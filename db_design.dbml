@@ -1,0 +1,8 @@
+TABLE users {
+  id SERIAL [pk]
+  created_at TIMESTAMPTZ
+  updated_at TIMESTAMPTZ
+  deleted_at TIMESTAMPTZ
+  username VARCHAR(255) [not null, unique]
+  password VARCHAR(255) [not null]
+}
